@@ -33,6 +33,8 @@ Interactive Power BI dashboard analysing global shark attack patterns (1900-2020
 - July-August peak season (929 combined attacks)
 - 48.27% attacks occur during daytime
 # Dashboard
+![Image](https://github.com/user-attachments/assets/ca9a991b-b1ec-4335-983b-8382e9464ba9)
 
+![Image](https://github.com/user-attachments/assets/4dd39a27-ec82-4c21-98a8-10cfdfe1d791)
 # Dataset Source
 Digitaley Drive
