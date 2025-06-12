@@ -1,0 +1,23 @@
+Area Recorded = DISTINCTCOUNT('Shark attacks'[Area])
+Attacks by Year = CALCULATE([Total Attacks],ALLEXCEPT('Shark attacks','Shark attacks'[Year]))
+Average Age = AVERAGE('Shark attacks'[Age])
+Country Recorded = DISTINCTCOUNT('Shark attacks'[Country])
+Fatality Rate(%) = DIVIDE([Total Fatal Attack],[Total Attacks],0)
+Female Victims = CALCULATE([Total Attacks],'Shark attacks'[Sex] = "Female")
+Male Victims = CALCULATE([Total Attacks],'Shark attacks'[Sex] = "Male")
+Non-Fatal Attack = CALCULATE([Total Attacks],'Shark attacks'[Fatal (Y/N)]= "No")
+Provoked Attack = CALCULATE([Total Attacks],'Shark attacks'[Attack Type]= "Provoked")
+Provoked to Unprovoked ratio = DIVIDE([Provoked Attack],[Unprovoked Attack],0)
+Rolling 5 year Avg = AVERAGEX(DATESINPERIOD('Shark attacks'[Case date].[Date], MAX('Shark attacks'[Case date].[Date]),-5,YEAR),[Total Attacks])
+Total Attacks = DISTINCTCOUNT('Shark attacks'[original order])
+Total Fatal Attack = CALCULATE([Total Attacks],'Shark attacks'[Fatal (Y/N)]= "Yes")
+Unique Species Count = DISTINCTCOUNT('Shark attacks'[Clean Species])
+Unprovoked Attack = CALCULATE([Total Attacks],'Shark attacks'[Attack Type]= "Unprovoked")
+Age Group = SWITCH(TRUE(),
+'Shark attacks'[Age] <= 10, "0-10",
+'Shark attacks'[Age] <= 20, "11-20",
+'Shark attacks'[Age] <= 30, "21-30",
+'Shark attacks'[Age] <= 40, "31-40",
+'Shark attacks'[Age] <= 50, "41-50",
+'Shark attacks'[Age] <= 60, "51-60",
+'Shark attacks'[Age] >=61, "61+")
