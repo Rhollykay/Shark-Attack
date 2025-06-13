@@ -36,5 +36,7 @@ Interactive Power BI dashboard analysing global shark attack patterns (1900-2020
 ![Image](https://github.com/user-attachments/assets/ca9a991b-b1ec-4335-983b-8382e9464ba9)
 
 ![Image](https://github.com/user-attachments/assets/4dd39a27-ec82-4c21-98a8-10cfdfe1d791)
+# Dashboard link
+https://app.powerbi.com/groups/me/reports/9814501e-c5a5-415b-95aa-a574c1a66ded/c6e651632d86fcbdd72b?experience=power-bi
 # Dataset Source
 Digitaley Drive
